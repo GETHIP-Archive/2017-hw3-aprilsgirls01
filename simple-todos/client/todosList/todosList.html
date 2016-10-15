@@ -1,0 +1,23 @@
+<template name="toDoList">
+      <h1>Todo List</h1>
+     
+      <form class="new-task" ng-submit="$ctrl.addTask($ctrl.newTask)">
+        <input ng-model="$ctrl.newTask" type="text" name="text" placeholder="Type to add new tasks"/>
+      </form>
+	  
+	
+     
+    <ul>
+      <li>
+        <button class="delete">&times;</button>
+     
+        <input type="checkbox" class="toggle-checked"/>
+     
+        <span class="text">
+          {{task.text}}
+        </span>
+      </li>
+    </ul>
+	</template>
+
+  
